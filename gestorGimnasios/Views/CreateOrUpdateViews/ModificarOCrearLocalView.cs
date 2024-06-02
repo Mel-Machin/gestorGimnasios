@@ -28,7 +28,10 @@ namespace gestorGimnasios.Views.CreateUpdateViews
         public void SetIdResponsable( int idResponsable) { }
         public void CrearLocal() { }
         public void MoficiarLocal() { }
-        public void ModificaroCrearLocalView(Local localAModificar) { }
+        public ModificarOCrearLocalView(Local localAModificar)
+        {
+            
+        }
 
     }
 }

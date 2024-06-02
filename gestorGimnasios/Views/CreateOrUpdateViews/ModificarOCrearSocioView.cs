@@ -28,6 +28,10 @@ namespace gestorGimnasios.Views.CreateUpdateViews
         public void SetIdLocal(in int idLocal) { }
         public void CrearSocio() { }
         public void ModificarSocio() { }
-        public void ModificaroCrearSocioView(Socio socioAModificar) { }
+
+        public ModificarOCrearSocioView(Socio socioAModificar)
+        {
+            
+        }
     }
 }

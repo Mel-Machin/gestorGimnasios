@@ -30,7 +30,10 @@ namespace gestorGimnasios.Views.CreateUpdateViews
         public void SetDisponibilidad(in string disponibilidad) { }
         public void CrearMaquina() { }
         public void ModificarMaquina() { }
-        public void ModificarOCrearMaquina(Maquina maquinaAModificar) { }
+        public ModificarOCrearMaquinaView(Maquina maquinaAModificar)
+        {
+            
+        }
 
     }
 }

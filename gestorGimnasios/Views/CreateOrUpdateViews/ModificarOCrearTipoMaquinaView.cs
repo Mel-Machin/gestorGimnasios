@@ -14,6 +14,8 @@ namespace gestorGimnasios.Views.CreateUpdateViews
         public void SetNombre(in string nombre) { }
         public void CrearTipoMaquina() { }
         public void ModificarTipoMaquina() { }
-        public void ModificarOCrearTipoMaquina(TipoMaquina tipoMaquinaAModificar) { }
+        public ModificarOCrearTipoMaquinaView(TipoMaquina tipoMaquinaAModificar){}
+
+
     }
 }

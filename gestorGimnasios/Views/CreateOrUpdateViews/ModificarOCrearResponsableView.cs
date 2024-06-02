@@ -18,6 +18,9 @@ namespace gestorGimnasios.Views.CreateUpdateViews
         public void SetTelefono(string telefono) { }
         public void CrearResponsable() { }
         public void ModificarResponsable() { }
-        public void ModificarOCrearResponsable(Responsable responsableAModificar) { }
+        public ModificarOCrearResponsableView(Responsable responsableAModificar)
+        {
+            
+        }
     }
 }
