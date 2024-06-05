@@ -1,0 +1,38 @@
+﻿@page
+@model gestorGimnasios.Pages.GestionandoEjercicioModel
+@{
+}
+
+<table>
+    <thead>
+        <tr>
+            <th>ID ejercicio</th>
+            <th>Descripción</th>
+            <th>Tipo maquina</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var ejercicio in Model.Ejercicios)
+        {
+            <tr>
+                <td>@ejercicio.IdEjercicio</td>
+                <td>@ejercicio.Descripcion</td>
+                <td>@ejercicio.IdTipoMaquina</td>
+                <td><button>Modificar</button></td>
+                <td><button onclick="modalEliminado(@Json.Serialize(Model.eliminarEjercicio(ejercicio.IdEjercicio)))">Eliminar</button></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    function modalEliminado(estado) {
+        console.log(estado);
+        if (estado) {
+            alert("Eliminado correctamente");
+        } else {
+            alert("Error al eliminar");
+        }
+
+    }
+</script>

@@ -1,6 +1,10 @@
 ﻿namespace gestorGimnasios.Models
+
 {
-    public class Rutina
+    using Microsoft.EntityFrameworkCore;
+    using System;
+    using System.Collections.Generic;
+    public class Rutina: DbContext
     {
         private int idRutina;
         private string descripcion;

@@ -1,7 +1,10 @@
-﻿namespace gestorGimnasios.Models.DataObjets.DAO
+﻿using Microsoft.Data.SqlClient;
+
+namespace gestorGimnasios.Models.DataObjets.DAO
 {
     public class SocioRepositorio
     {
+  
 
         public List<Socio> obtenerSociosRegistrados() { return null; }
 
